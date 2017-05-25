@@ -11,7 +11,7 @@ body {
   padding: 15px;
   text-align: right;
   width: 100%;
-  background: linear-gradient(170deg, #F50057, #2979FF);
+  background-color: #109EC6;
   color: #fff;
 }
 
@@ -22,13 +22,17 @@ body {
 }
 
 .logo {
+  letter-spacing: 1px;
   position: fixed;
   left: 25px;
+  top: 2px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 200%;
 }
 
 h1 {
   text-align: center;
-  color: #2979FF;
+  color: #109EC6;
   width: 400px;
   margin: auto;
   padding: 10px;

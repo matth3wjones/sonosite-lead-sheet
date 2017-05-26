@@ -7,7 +7,7 @@ require 'logger'
 API_VERSION = 'v2'
 CACHED_API_FILE = "drive-#{API_VERSION}.cache"
 
-CREDENTIAL_STORE_FILE = "#{$0}-oauth2.json"
+CREDENTIAL_STORE_FILE = "drive.rb-oauth2.json"
 
 # Handles authentication and loading of the API.
 def setup()

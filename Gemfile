@@ -19,6 +19,8 @@ gem 'shotgun', '~>0.9.1'
 gem 'google-api-client', '>= 0.8'
 # gem 'google-api-client', '~> 0.11'
 
+gem 'faker'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
@@ -28,5 +30,4 @@ end
 
 group :test, :development do
   gem 'factory_girl'
-  gem 'faker'
 end

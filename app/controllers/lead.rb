@@ -26,6 +26,9 @@ end
 get '/leads/export' do
   puts "\n\n\n\n"
   Lead.to_csv
+  client, drive = setup()
+  insert_file(client, drive)
+  # load('./drive.rb')
   redirect '/'
 end
 

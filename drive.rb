@@ -1,3 +1,9 @@
+require 'google/api_client'
+require 'google/api_client/client_secrets'
+require 'google/api_client/auth/file_storage'
+require 'google/api_client/auth/installed_app'
+require 'logger'
+
 API_VERSION = 'v2'
 CACHED_API_FILE = "drive-#{API_VERSION}.cache"
 CREDENTIAL_STORE_FILE = "#{$0}-oauth2.json"

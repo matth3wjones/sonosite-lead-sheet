@@ -1,7 +1,32 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+  // $(".spreadsheet-row").on("click", function(){
+  //
+  //   var request = $.ajax({
+  //     method: formMethod,
+  //     url: formUrl,
+  //     data: formData,
+  //   })
+  //
+  //   request.done(function(response){
+  //     $(".poem-list").prepend("<li class='poem-list-item'>"+response+"</li>");
+  //     $form[0].reset();
+  //   })
+  //
+  //   request.fail(function(error_response){
+  //     alert("Creating the poem failed")
+  //   })
+  // })
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  $(".spreadsheet-row").on("click", function(){
+    document.location = $(this).find('a').attr("href");
+  })
+
+  $(".spreadsheet-row").not(':first').hover(
+  function () {
+    $(this).css("background","#109EC6");
+  },
+  function () {
+    $(this).css("background","");
+  }
+);
 });

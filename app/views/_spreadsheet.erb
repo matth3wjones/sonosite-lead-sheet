@@ -1,0 +1,54 @@
+<table class="spreadsheet">
+  <tr class="spreadsheet-header">
+    <th>Salutation</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Company</th>
+    <th>Title</th>
+    <th>Department</th>
+    <th>Contact Specialty</th>
+    <th>Location Type</th>
+    <th>Street</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip Code</th>
+    <th>Country</th>
+    <th>Phone</th>
+    <th>Fax</th>
+    <th>E-mail</th>
+    <th>New to Ultrasound?</th>
+    <th>Previous Ultrasound?</th>
+    <th>Current SonoSite User?</th>
+    <th>Buying Timeframe</th>
+    <th>Product</th>
+    <th>Rating</th>
+    <th>Marketing Comments</th>
+  </tr>
+  <% @leads.each do |lead| %>
+    <tr class="spreadsheet-row">
+      <td><a href="leads/<%=lead.id%>"><%=lead.salutation%></a></td>
+      <td><%=lead.first_name%></td>
+      <td><%=lead.last_name%></td>
+      <td><%=lead.company%></td>
+      <td><%=lead.title%></td>
+      <td><%=lead.department%></td>
+      <td><%=lead.contact_specialty%></td>
+      <td><%=lead.location%></td>
+      <td><%=lead.street%></td>
+      <td><%=lead.city%></td>
+      <td><%=lead.state%></td>
+      <td><%=lead.zip_code%></td>
+      <td><%=lead.country%></td>
+      <td><%=lead.phone%></td>
+      <td><%=lead.fax%></td>
+      <td><%=lead.email%></td>
+      <td><%=lead.new_to_ultrasound%></td>
+      <td><%=lead.previous_ultrasound%></td>
+      <td><%=lead.current_sonosite%></td>
+      <td><%=lead.buying_timeframe%></td>
+      <td><%=lead.product%></td>
+      <td><%=lead.rating%></td>
+      <td><%=lead.marketing_comments%></td>
+    </tr>
+  <% end %>
+</table>

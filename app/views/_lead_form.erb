@@ -17,7 +17,7 @@
 <input type="text" name="lead[department]" placeholder="department"></br>
 
 <label>Contact Specialty: </label>
-<select name="lead[contact-specialty]">
+<select name="lead[contact_specialty]">
   <option value="Anesthesiology">Anesthesiology</option>
   <option value="Angiology">Angiology</option>
   <option value="BioMed">BioMed</option>
@@ -105,21 +105,21 @@
 <input type="text" name="lead[fax]" placeholder="fax"></br>
 
 <label>E-mail: </label>
-<input type="text" name="lead[e-mail]" placeholder="e-mail"></br>
+<input type="text" name="lead[email]" placeholder="e-mail"></br>
 
 <label>New to Ultrasound? </label>
-<input type="radio" name="lead[new-to-ultrasound]" value="yes">Yes
-<input type="radio" name="lead[new-to-ultrasound]" value="no">No</br>
+<input type="radio" name="lead[new_to_ultrasound]" value="true">Yes
+<input type="radio" name="lead[new_to_ultrasound]" value="false">No</br>
 
 <label>Previous Ultrasound? </label>
-<input type="text" name="lead[previous-ultrasound]" placeholder="previous ultrasound?"></br>
+<input type="text" name="lead[previous_ultrasound]" placeholder="previous ultrasound?"></br>
 
 <label>Current SonoSite User? </label>
-<input type="radio" name="lead[new-to-ultrasound]" value="yes">Yes
-<input type="radio" name="lead[new-to-ultrasound]" value="no">No</br>
+<input type="radio" name="lead[current_sonosite]" value="true">Yes
+<input type="radio" name="lead[current_sonosite]" value="false">No</br>
 
 <label>Buying Timeframe: </label>
-<select name="lead[buying-timeframe]">
+<select name="lead[buying_timeframe]">
   <option value="Unknown">Unknown</option>
   <option value="Less than 30 Days">Less than 30 Days</option>
   <option value="30-90 Days">30-90 Days</option>
@@ -139,4 +139,4 @@
 </select></br>
 
 <label>Marketing Comments: </label>
-<input type="textarea" name="lead[marketing-comments]" placeholder="marketing comments"></br>
+<textarea type="textarea" rows="6" wrap="hard" name="lead[marketing_comments]" placeholder="marketing comments"></textarea>

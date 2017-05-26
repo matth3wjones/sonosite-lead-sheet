@@ -1,0 +1,33 @@
+<div class="lead-container">
+  <p class="lead-display">Salutation: <%= @lead.salutation %></p>
+  <p class="lead-display">First Name: <%= @lead.first_name %></p>
+  <p class="lead-display">Last Name: <%= @lead.last_name %></p>
+  <p class="lead-display">Company: <%= @lead.company %></p>
+  <p class="lead-display">Title: <%= @lead.title %></p>
+  <p class="lead-display">Department: <%= @lead.department %></p>
+  <p class="lead-display">Contact Specialty: <%= @lead.contact_specialty %></p>
+  <p class="lead-display">Location: <%= @lead.location %></p>
+  <p class="lead-display">Street: <%= @lead.street %></p>
+  <p class="lead-display">City: <%= @lead.city %></p>
+  <p class="lead-display">State: <%= @lead.state %></p>
+  <p class="lead-display">Zip Code: <%= @lead.zip_code %></p>
+  <p class="lead-display">Country: <%= @lead.country %></p>
+  <p class="lead-display">Phone: <%= @lead.phone %></p>
+  <p class="lead-display">Fax: <%= @lead.fax %></p>
+  <p class="lead-display">E-mail: <%= @lead.email %></p>
+  <p class="lead-display">New to Ultrasound? <%= @lead.new_to_ultrasound %></p>
+  <p class="lead-display">Previous Ultrasound System: <%= @lead.previous_ultrasound %></p>
+  <p class="lead-display">Current SonoSite User? <%= @lead.current_sonosite %></p>
+  <p class="lead-display">Buying Timeframe: <%= @lead.buying_timeframe %></p>
+  <p class="lead-display">Product: <%= @lead.product %></p>
+  <p class="lead-display">Rating: <%= @lead.rating %></p>
+  <p class="lead-display">Marketing Comments: <%= @lead.marketing_comments %></p>
+
+  <a href="/leads/<%=@lead.id%>/edit" id="edit-button">edit</a>
+
+  <form method="post" action="/leads/<%=@lead.id%>">
+    <input name="_method" type="hidden" value="delete">
+    <input type="submit" value="delete" id="delete-button">
+  </form>
+
+</div>

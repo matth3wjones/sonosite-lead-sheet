@@ -1,3 +1,5 @@
 <h1>SonoSite Lead Sheet</h1>
-<a href="/leads/new">Create New Lead</a>
-<a href="">View All Leads</a>
+<% if logged_in? %>
+  <a href="/leads/new">Create New Lead</a>
+  <a href="">View All Leads</a>
+<% end %>

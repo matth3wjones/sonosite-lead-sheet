@@ -27,3 +27,20 @@ get '/leads/:id' do
   @lead = Lead.find(params[:id])
   erb :'leads/profile'
 end
+
+get '/leads/:id/edit' do
+  @lead = Lead.find(params[:id])
+  erb :'leads/edit'
+end
+
+put '/leads/:id' do
+  @lead = Lead.find(params[:id])
+  @lead.update(params[:lead])
+  redirect "/leads/#{@lead.id}"
+end
+
+delete '/leads/:id' do
+  @lead = Lead.find(params[:id])
+  @lead.destroy
+  redirect '/'
+end

@@ -1,6 +1,10 @@
 <h1>SonoSite Lead Sheet</h1>
 <% if logged_in? %>
-  <a href="/leads/new">Create New Lead</a>
-
+  <div id="new-lead-button">
+    <a href="/leads/new" id="new-lead-link">Create New Lead</a>
+  </div>
+  <div id="export-leads-button">
+    <a href="/leads/export" id="export-lead-link">Export to Google Sheets</a>
+  </div>
   <%= erb :_spreadsheet %>
 <% end %>

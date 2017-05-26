@@ -16,6 +16,9 @@ gem 'bcrypt'
 
 gem 'shotgun', '~>0.9.1'
 
+gem 'google-api-client', '>= 0.8'
+# gem 'google-api-client', '~> 0.11'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'

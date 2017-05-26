@@ -23,6 +23,12 @@ post '/leads' do
   end
 end
 
+get '/leads/export' do
+  puts "\n\n\n\n"
+  Lead.to_csv
+  redirect '/'
+end
+
 get '/leads/:id' do
   @lead = Lead.find(params[:id])
   erb :'leads/profile'

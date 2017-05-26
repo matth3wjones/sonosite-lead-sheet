@@ -20,6 +20,16 @@ require "sinatra/reloader" if development?
 
 require 'erb'
 
+require 'csv'
+require 'bcrypt'
+
+require 'google/api_client'
+require 'google/api_client/client_secrets'
+require 'google/api_client/auth/file_storage'
+require 'google/api_client/auth/installed_app'
+require 'logger'
+
+
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
